@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BinaryOperations</string>
+    <string name="action_settings">Settings</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
+    <string name="hint">Insira o próximo número</string>
+    <string name="calculationError">Erro ao calcular, favor tentar novamente.</string>
+    <string name="clear">C</string>
+</resources>
