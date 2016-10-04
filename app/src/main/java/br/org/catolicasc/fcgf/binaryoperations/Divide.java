@@ -14,16 +14,18 @@ final class Divide implements IOperation {
         int longestLength = Util.getLongestLength(x, y);
         x = Util.padLeft(x, longestLength);
         y = Util.padLeft(y, longestLength);
-        String contador = Util.padLeft("0", longestLength);
+        String quotient = Util.padLeft("0", longestLength);
 
         final Add add = new Add();
         final Subtract subtract = new Subtract();
 
-        while (Util.compare(x, y) >= 0) {
-            contador = add.calculate(contador, "1");
+        while (Util.compareBinaries(x, y) >= 0) {
+            quotient = add.calculate(quotient, "1");
             x = subtract.calculate(x, y);
         }
 
-        return contador;
+        //x = rest
+
+        return quotient;
     }
 }

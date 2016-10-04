@@ -24,7 +24,7 @@ public final class Util {
         return firstLength > secondLength ? firstLength : secondLength;
     }
 
-    public static int compare(String x, String y) {
+    public static int compareBinaries(String x, String y) {
         int longestLength = Util.getLongestLength(x, y);
         x = Util.padLeft(x, longestLength);
         y = Util.padLeft(y, longestLength);
